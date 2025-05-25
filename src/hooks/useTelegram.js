@@ -11,10 +11,10 @@ export function useTelegram() {
     };
     // Функция, чтобы скрыть/показать кнопку, предоставляемую TG
     const onToggleButton = () => {
-        if (tg.MainButton.isVisible) {
-            tg.MainButton.hide();
+        if (tg.BottomButton.isVisible) {
+            tg.BottomButton.hide();
         } else {
-            tg.MainButton.show();
+            tg.BottomButton.show();
         }
     };
 
