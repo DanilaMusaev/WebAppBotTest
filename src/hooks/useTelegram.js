@@ -1,4 +1,5 @@
 // Вынос объекта подключенного web app для tg
+/** @type {import('@twa-dev/types').WebApp} */
 const tg = window.Telegram.WebApp;
 
 /**
