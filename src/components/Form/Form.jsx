@@ -10,16 +10,16 @@ const Form = () => {
 
     // Меняем текст для Main кнопки
     useEffect(() => {
-        tg.BottomButton?.setParams({
+        tg.BottomButton.setParams({
             text: 'Отправить данные',
         });
     }, []);
 
     useEffect(() => {
         if (!street || !country) {
-            tg.BottomButton?.hide();
+            tg.BottomButton.hide();
         } else {
-            tg.BottomButton?.show();
+            tg.BottomButton.show();
         }
     }, [country, street]);
 
